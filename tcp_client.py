@@ -72,8 +72,8 @@ def main():
     init_logging()
     
     io_loop = tornado.ioloop.IOLoop.instance()
-    c1 = TCPClient("10.22.10.47", 8001, io_loop)
-    c2 = TCPClient("10.22.10.47", 8001, io_loop)
+    c1 = TCPClient("192.168.101.10", 8001, io_loop)
+    c2 = TCPClient("192.168.101.10", 8001, io_loop)
 
     
     c1.connect()
